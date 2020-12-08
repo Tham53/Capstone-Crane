@@ -1,0 +1,48 @@
+.player-hud {
+  color: #fff;
+  width: 210px;
+  height: 65px;
+  text-transform: uppercase;
+  margin-right: 3px;
+  position: relative;
+  font-size: 15px;
+  flex-shrink: 0;
+
+  &:first-of-type {
+    margin-left: 3px;
+  }
+
+  background-image: url('/assets/images/ui/player_hud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .name {
+    position: absolute;
+    background: #000;
+    top: 2px;
+    left: 20px;
+    padding: 3px;
+  }
+
+  .kills {
+    position: absolute;
+    top: 20px;
+    right: 95px;
+  }
+
+  .courage-bar {
+    position: absolute;
+    top: 34px;
+    left: 95px;
+
+    .courage {
+      width: 6px;
+      height: 12px;
+      margin-right: 2px;
+      display: inline-block;
+
+      background-image: url('/assets/images/ui/hud_courage.png');
+      background-size: 100%;
+    }
+  }
+}

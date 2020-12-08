@@ -1,0 +1,23 @@
+
+.game-object-renderer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+
+  .sprite {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .game-object-shadow {
+    width: 45px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-image: url('/assets/images/gameObjects/selina_player.png');
+    background-position: -640px -545px;
+    background-size: 700px;
+  }
+}

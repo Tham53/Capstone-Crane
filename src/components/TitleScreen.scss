@@ -1,0 +1,84 @@
+
+@keyframes selected-button-flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.TitleScreen {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+
+  .title-image {
+    height: 50%;
+    width: auto;
+    display: block;
+    margin: 0 auto 40px;
+  }
+
+  .start-button-container {
+    width: 250px;
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+    }
+
+    .start-button {
+      cursor: pointer;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      padding: 12px 0;
+      font-size: 18px;
+      margin-left: 40px;
+      font-weight: bold;
+
+      .indicator {
+        display: none;
+        background: url('/assets/images/ui/hover_indicator.png');
+        position: absolute;
+        left: -53px;
+        top: 6px;
+        height: 30px;
+        width: 40px;
+        background-position: center center;
+        background-size: 42px;
+      }
+
+      &.selected span {
+        animation: selected-button-flash 0.3s step-start infinite;
+      }
+
+      &:hover .indicator,
+      &.selected .indicator {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.instructions {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  cursor: default;
+
+  .instructions-text {
+    display: none;
+    font-size: 11px;
+    line-height: 1.5em;
+  }
+
+  &:hover {
+    .hover-hint {
+      display: none;
+    }
+
+    .instructions-text {
+      display: block;
+    }
+  }
+}
