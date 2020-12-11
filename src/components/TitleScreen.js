@@ -45,7 +45,7 @@ class TitleScreen extends React.Component {
             onClick={this.onSelectOnePlayer}
           >
             <div className='indicator' />
-            <span>Start</span>
+            <span>Start!</span>
           </div>
 
               <Link to="/memeapi">
