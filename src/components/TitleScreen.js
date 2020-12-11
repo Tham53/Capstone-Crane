@@ -48,7 +48,7 @@ class TitleScreen extends React.Component {
           </div>
         
             <div className='Memeapi'>
-            <Link> to="/" variant="btn btn-success" >Why so serious?</Link>
+            <Link to="/" variant="btn btn-success" >Why so serious?</Link>
           <div>
           </div>
         </div>

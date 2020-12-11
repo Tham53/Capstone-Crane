@@ -1,6 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom'
-import { inject, observer } from 'mobx-react'
+// import { withRouter } from 'react-router-dom'
+// import { inject, observer } from 'mobx-react'
 
 class Memeapi extends React.Component{
     constructor(){

@@ -8,7 +8,7 @@ import Memeapi from './components/Memeapi'
 
 
 import {
-  Router,
+  BrowserRouter,
   Switch,
   Route
 } from 'react-router-dom'
@@ -19,14 +19,14 @@ class App extends Component {
     return (
       <div className='App'>
         <Provider {...RootStore} >
-          <Router>
+          <BrowserRouter>
             <Switch>
               <Route exact path='/' component={TitleScreen}/>
               <Route path='/game' component={GameRenderer}/>
               <Route path='/player_select' component={PlayerSelectScreen}/>
               <Route path='/memeapi' component={Memeapi}/>
             </Switch>
-          </Router>
+          </BrowserRouter>
         </Provider>
       </div>
     );
