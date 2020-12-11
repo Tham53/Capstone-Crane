@@ -2,7 +2,7 @@
   "name": "Crane",
   "version": "0.1.0",
   "engines": {
-    "node": "0.1.0"
+    "node": "12.18.4"
   },
   "private": true,
   "dependencies": {
