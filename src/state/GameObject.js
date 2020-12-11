@@ -92,7 +92,7 @@ class GameObject {
 
   @action
   integrateVelocity( velocity, deltaTime ) {
-    //Add gravity to y-velocity, if in the air
+    
     if ( !this.onGround && this.isAffectedByGravity ) {
       velocity.y -= GRAVITY * deltaTime * MS_FRAME_SCALE
     }
@@ -101,7 +101,7 @@ class GameObject {
     this.position.y += velocity.y * deltaTime * MS_FRAME_SCALE
     this.position.z += velocity.z * deltaTime * MS_FRAME_SCALE
 
-    //Prevent falling through the ground
+    
     if ( this.position.y <= 0 && velocity.y < 0 ) {
       this.position.y = 0
       velocity.y = 0
@@ -198,7 +198,7 @@ class GameObject {
   }
 
   setFreefall( velocity, damage = 0 ) {
-    // Zero out any current y-velocity, since the freefall will take the object back to the ground
+    
     this.velocity.y = 0
 
     this.freefall = {

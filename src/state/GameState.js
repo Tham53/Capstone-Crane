@@ -50,7 +50,7 @@ class GameState {
     this.level = new Level()
     this.camera = new Camera({ gameState: this })
 
-    //Players
+    
     const { selectedPlayerTypes } = RootStore.playerSelection
     selectedPlayerTypes.forEach(( playerType, i ) => {
       const x = 350 + 100 * i
@@ -58,7 +58,7 @@ class GameState {
       this.addPlayer( PlayerTypesToClass[ playerType ], { x, y: 0, z })
     })
 
-    //Level
+    
     this.level.startingGameObjects.forEach( objectDef => {
       const {
         objectType,
@@ -84,7 +84,7 @@ class GameState {
 
   @action
   stepGameLoop() {
-    // calculate delta time
+    
     const now = performance.now()
     const deltaTime = ( now - this.lastStepTime ) || 0
     this.lastStepTime = now

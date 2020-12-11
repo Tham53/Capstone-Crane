@@ -1,5 +1,5 @@
 export default [
-  { /* WASD keys, spacebar jump, enter attack */
+  { 
     left: 65,
     right: 68,
     up: 87,
@@ -7,7 +7,7 @@ export default [
     jump: 32,
     attack: 13,
   },
-  { /* Arrow keys */
+  { 
     left: 37,
     right: 39,
     up: 38,

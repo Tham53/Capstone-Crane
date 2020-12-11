@@ -23,7 +23,7 @@ class Camera {
   step( deltaTime ) {
     this.gameState.players.forEach( player => {
       if ( player.position.x > this.position.x + this.followWidth && !this.locked ) {
-        // Move rightwards with the player, so they don't get further away
+        
         this.position.x += Math.max( 0, player.velocity.x * deltaTime * MS_FRAME_SCALE )
       }
     })

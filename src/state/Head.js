@@ -58,7 +58,7 @@ class Head extends GameObject {
   onReturnToGround() {
     super.onReturnToGround()
     
-    // Bounce
+    
     this.setFreefall({
       x: this.xVel,
       y: BOUNCE_VEL,

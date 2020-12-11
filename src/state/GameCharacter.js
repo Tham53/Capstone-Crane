@@ -2,7 +2,7 @@ import GameObject from './GameObject'
 import { action, observable } from 'mobx'
 import directions from '../shared/enum/directions'
 
-// A GameObject that can attack and take damage
+
 
 const DAMAGE_FLYBACK_X = 4
 const DAMAGE_FLYBACK_Y = 5
@@ -80,8 +80,8 @@ class GameCharacter extends GameObject {
     this.courage -= damage
     fromGameCharacter.damageDealt += damage
 
-    this.clearMovementFreezes() // Clear movement freezes because the character is about to be knocked backwards
-    clearTimeout( this.attackDamageTimeout ) // Interrupt any in-progress attack
+    this.clearMovementFreezes()
+    clearTimeout( this.attackDamageTimeout ) 
     this.isCurrentlyTakingDamage = true
 
     this.setAnimation( 'take_damage' )
@@ -102,14 +102,14 @@ class GameCharacter extends GameObject {
   @action
   onReturnToGround() {
     super.onReturnToGround()
-    this.isCurrentlyTakingDamage = false // Reset currently-taking-damage flag once damage freefall completes
+    this.isCurrentlyTakingDamage = false 
   }
 
   @action
   die() {
     this.setAnimation( 'dead' )
     this.isDead = true
-    // Increase the freefall velocity a bit
+    
     this.freefall.velocity.x *= 1.5
     this.freefall.velocity.y *= 1.5
     this.freefall.velocity.z *= 1.5

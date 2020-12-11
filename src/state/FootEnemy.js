@@ -211,7 +211,7 @@ class FootEnemy extends GameCharacter {
     this.updateTargetedPlayer()
     this.moveTowardsTargetedPlayer()
 
-    // Short-range attack takes precedence over long-range attack
+    
     if ( this.shouldDoShortRangeAttack()) {
       this.doShortRangeAttack()
     }

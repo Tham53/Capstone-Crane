@@ -178,7 +178,7 @@ class Player extends GameCharacter {
 
     this.updateMovementAnimation()
 
-    // Set direction based on x-velocity.  If velocity is 0, leave direction alone (preserving the previous direction)
+    
     if ( this.velocity.x < 0 ) {
       this.direction = directions.left
     }
@@ -191,13 +191,13 @@ class Player extends GameCharacter {
   step( deltaTime ) {
     super.step( deltaTime )
     
-    //Prevent walking outside of level
+    
     this.position.z = Math.max( this.level.minZ, Math.min( this.level.maxZ, this.position.z ))
 
-    //Prevent backtracking behind camera
+    
     this.position.x = Math.max( this.camera.position.x + this.camera.screenLeftEdge, this.position.x )
 
-    //Prevent walking past camera
+    
     this.position.x = Math.min( this.camera.position.x + this.camera.screenRightEdge, this.position.x )
   }
 
