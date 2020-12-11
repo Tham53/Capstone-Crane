@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "b3706b6ee82ddb6693c8",
-    "url": "/Tham53/Capstone-Crane/static/css/main.9a9f2543.chunk.css"
+    // "revision": "b3706b6ee82ddb6693c8",
+    // "url": "/Tham53/Capstone-Crane/static/css/main.9a9f2543.chunk.css"
   },
   {
     "revision": "b3706b6ee82ddb6693c8",
