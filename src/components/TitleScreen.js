@@ -1,8 +1,9 @@
 import React from 'react'
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter} from 'react-router-dom'
 import './TitleScreen.scss'
 import { inject } from 'mobx-react'
 import classnames from 'classnames'
+import { Link } from 'react-router-dom';
 
 
 const NEXT_SCREEN_DELAY = 1500
@@ -46,21 +47,20 @@ class TitleScreen extends React.Component {
             <div className='indicator' />
             <span>Start</span>
           </div>
-        
-            <div className='Memeapi'>
-            <Link to="/" variant="btn btn-success" >Why so serious?</Link>
-          <div>
-          </div>
-        </div>
+
+              <Link to="/memeapi">
+                  <span>Why so serious?</span>
+                </Link>
+
         <div className='instructions'>
+
           <span className='hover-hint'>Controls</span>
           <div className='instructions-text'>
-            Controls
-            MOVE: WASD      JUMP: Space     ATTACK: Enter  <br/>
+            WASD to Move, Enter to Attack, Space to Jump<br/>
           </div>
         </div>
-        </div>
-        </div>
+      </div>
+      </div>
     )
   }
 }

@@ -6,7 +6,6 @@ import RootStore from './state/RootStore'
 import { Provider } from 'mobx-react'
 import Memeapi from './components/Memeapi'
 
-
 import {
   BrowserRouter,
   Switch,
