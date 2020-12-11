@@ -4,7 +4,9 @@ import TitleScreen from './components/TitleScreen'
 import PlayerSelectScreen from './components/PlayerSelectScreen'
 import RootStore from './state/RootStore'
 import { Provider } from 'mobx-react'
-import history from './shared/history'
+import Memeapi from './components/Memeapi'
+
+
 import {
   Router,
   Switch,
@@ -17,11 +19,12 @@ class App extends Component {
     return (
       <div className='App'>
         <Provider {...RootStore} >
-          <Router history={history} >
+          <Router>
             <Switch>
+              <Route exact path='/' component={TitleScreen}/>
               <Route path='/game' component={GameRenderer}/>
               <Route path='/player_select' component={PlayerSelectScreen}/>
-              <Route component={TitleScreen} />
+              <Route path='/memeapi' component={Memeapi}/>
             </Switch>
           </Router>
         </Provider>

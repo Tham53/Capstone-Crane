@@ -1,8 +1,9 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import './TitleScreen.scss'
 import { inject } from 'mobx-react'
 import classnames from 'classnames'
+
 
 const NEXT_SCREEN_DELAY = 1500
 
@@ -14,8 +15,6 @@ class TitleScreen extends React.Component {
   }
 
   onSelectOnePlayer = () => this.selectNumberOfPlayers( 1 )
-
-  
 
   selectNumberOfPlayers( count ) {
     this.setState({ selectedOption: count })
@@ -47,29 +46,21 @@ class TitleScreen extends React.Component {
             <div className='indicator' />
             <span>Start</span>
           </div>
-          <div
-            className={classnames('start-button', {selected: selectedOption === 2})}
-            
-          >
+        
+            <div className='Memeapi'>
+            <Link> to="/" variant="btn btn-success" >Why so serious?</Link>
+          <div>
           </div>
         </div>
         <div className='instructions'>
-          <span className='hover-hint'>Controls and Credits</span>
+          <span className='hover-hint'>Controls</span>
           <div className='instructions-text'>
             Controls
-            MOVE: WASD      JUMP: Space     ATTACK: Enter  
-
-            Credits
-              The ACA Class of the crazy year 2020
-
-              My Instructor Matt Huntsberry
-
-              DC Comics
-
-              The creator of Jeff the Killer...whoever you are.  <br/>
+            MOVE: WASD      JUMP: Space     ATTACK: Enter  <br/>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
     )
   }
 }
