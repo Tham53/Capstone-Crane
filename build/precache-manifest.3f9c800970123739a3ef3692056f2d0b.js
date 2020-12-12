@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fa69590a580824481f2c",
+    "revision": "612294c4263964e191ca",
     "url": "/Tham53/Capstone-Crane/static/css/main.8cbc5088.chunk.css"
   },
   {
-    "revision": "fa69590a580824481f2c",
-    "url": "/Tham53/Capstone-Crane/static/js/main.fa69590a.chunk.js"
+    "revision": "612294c4263964e191ca",
+    "url": "/Tham53/Capstone-Crane/static/js/main.612294c4.chunk.js"
   },
   {
     "revision": "e4f61ba82b2e53833bc5",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/Tham53/Capstone-Crane/static/media/PressStart2P.74496d90.ttf"
   },
   {
-    "revision": "9eddebcda0f0f6e0d60a3f3371b9cbc3",
+    "revision": "0097844d28e2daeadb4fa4bb2239afd9",
     "url": "/Tham53/Capstone-Crane/index.html"
   }
 ];
