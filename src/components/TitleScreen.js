@@ -54,9 +54,10 @@ class TitleScreen extends React.Component {
 
         <div className='instructions'>
 
-          <span className='hover-hint'>Controls</span>
+          <span className='hover-hint'>Credits</span>
           <div className='instructions-text'>
-            WASD to Move, Enter to Attack, Space to Jump<br/>
+            HUGE THANK YOU to my teacher Matthew Huntsberry<br/>
+            And the ACA Class of 2020!<br/>
           </div>
         </div>
       </div>

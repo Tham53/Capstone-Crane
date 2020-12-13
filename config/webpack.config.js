@@ -144,14 +144,14 @@ module.exports = function(webpackEnv) {
       // initialization, it doesn't blow up the WebpackDevServer client, and
       // changing JS code would still trigger a refresh.
     ].filter(Boolean),
-    output: { publicPath: '/'
+    output: {
       // The build folder.
-    //   path: isEnvProduction ? paths.appBuild : undefined,
+      path: isEnvProduction ? paths.appBuild : undefined,
       // Add /* filename */ comments to generated require()s in the output.
-    //   pathinfo: isEnvDevelopment,
+      pathinfo: isEnvDevelopment,
       // There will be one main bundle, and one file per asynchronous chunk.
       // In development, it does not produce real files.
-    //   filename: isEnvProduction
+      filename: isEnvProduction
         ? 'static/js/[name].[chunkhash:8].js'
         : isEnvDevelopment && 'static/js/bundle.js',
       // There are also additional JS chunk files if you use code splitting.
